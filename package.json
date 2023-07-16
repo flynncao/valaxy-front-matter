@@ -1,0 +1,55 @@
+{
+    "name": "valaxy-front-matter",
+    "displayName": "valaxy-front-matter",
+    "description": "Valaxy front matter plugin for Visual Studio Code.",
+    "version": "1.0.0",
+    "publisher": "Flynn Cao",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "engines": {
+			"vscode": "^1.52.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.valaxyFrontMatter"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.valaxyFrontMatter",
+                "title": "Valaxy Front Matter: Generate front matter for current post."
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.valaxyFromtMatter",
+                "key": "ctrl+shift+alt+v",
+                "mac": "cmd+shift+alt+v",
+                "when": "editorTextFocus"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint \"src/**/*.ts\"",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^16.18.34",
+        "@types/vscode": "^1.73.0",
+        "@typescript-eslint/eslint-plugin": "^5.42.0",
+        "@typescript-eslint/parser": "^5.42.0",
+        "eslint": "^8.26.0",
+        "typescript": "^5.1.3"
+    },
+    "dependencies": {
+        "moment": "^2.29.4"
+    }
+}
