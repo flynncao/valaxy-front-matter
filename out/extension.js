@@ -29,9 +29,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.activate = void 0;
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
-const vscode = __importStar(require("vscode"));
 const moment_1 = __importDefault(require("moment"));
 const path_1 = __importDefault(require("path"));
+const vscode = __importStar(require("vscode"));
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 function activate(context) {
@@ -62,11 +62,18 @@ title: ${fileTitle}
 date: ${date}
 updated: ${date}
 hide: false
+top: 0
 tags:
   - untagged
 categories:
   - uncategorized
----\n`;
+---\n
+:::zh-CN
+这是中文内容
+:::
+:::en
+This is English content
+:::`;
         textEditor.edit((editBuilder) => {
             editBuilder.insert(new vscode.Position(0, 0), result);
         });
