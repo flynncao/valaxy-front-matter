@@ -10,7 +10,7 @@
     "url": "https://github.com/flynncao/valaxy-front-matter/"
   },
   "engines": {
-    "vscode": "^1.52.0"
+    "vscode": "^1.77.3"
   },
   "categories": [
     "Other"
@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@types/node": "^16.18.34",
-    "@types/vscode": "^1.73.0",
+    "@types/vscode": "^1.77.0",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
     "eslint": "^8.26.0",
